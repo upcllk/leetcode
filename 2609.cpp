@@ -20,7 +20,7 @@ public:
                 ++ count1;
             }
             if(count1 != 0 && count1 <= count0) {
-                result = max(result, 2 * count1);
+                result = max(result, 2count1);
             }
         }
         return result;

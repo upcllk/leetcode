@@ -22,7 +22,7 @@ public:
         for(int i = 0; i < size; ++i) {
             for(int j = i + 1; j < size; ++j) {
                 if((nums[i] & nums[j]) == 0) {
-                    result = max(result, (int)words[i].length() * (int)words[j].length());
+                    result = max(result, (int)words[i].length()(int)words[j].length());
                 }
             }
         }

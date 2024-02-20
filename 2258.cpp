@@ -6,7 +6,7 @@ class Solution {
 public:
     int maximumMinutes(vector<vector<int>>& grid) {
         const int m = grid.size(), n = grid[0].size();
-        int left = 0, right = m * n;
+        int left = 0, right = mn;
         bool existPathWhenBreak = false;
         while(left < right) {
             int mid = left + ((right - left) << 1);
@@ -21,7 +21,7 @@ public:
             }
         }
         if(existPathWhenBreak) {
-            if(right == m * n) {
+            if(right == mn) {
                 return 1e9;
             }
             return left;

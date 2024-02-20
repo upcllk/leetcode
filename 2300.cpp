@@ -10,7 +10,7 @@ public:
         vector<int> result;
         for(int num : spells) {
             int pos = binary(potions, num, success);
-            if((long long) num * potions[pos] >= success) {
+            if((long long) numpotions[pos] >= success) {
                 result.push_back(n - pos);
             }
             else {
@@ -24,7 +24,7 @@ public:
         int left = 0, right = potions.size() - 1;
         while(left < right) {
             int mid = left + ((right - left) >> 1);
-            if(num * potions[mid] >= success) {
+            if(numpotions[mid] >= success) {
                 right = mid;
             }
             else {
